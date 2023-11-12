@@ -352,11 +352,11 @@ pipeline {
 4. give your github url, branch and generate the pipeline synatx
 5. paste it into stage steps git check
 
-``````groovy
+```groovy
 
 stage('Checkout git') {
-     steps {
-	git branch: 'main', url: 'https://github.com/DevOpsCloudNinjas/DevSecOps-project'
+    steps {
+	    git branch: 'main', url: 'https://github.com/DevOpsCloudNinjas/DevSecOps-project'
   }
 }
 ```
@@ -415,7 +415,7 @@ This step pauses Pipeline execution and wait for previously submitted SonarQube 
 2. go to this site https://opensource.triology.de/jenkins/pipeline-syntax/
 3. search for  waitForQualityGate: Wait for SonarQube analysis to be completed and return quality gate status
 4. generate pipeline syntax and paste it into steps
-5. timeout is optional 
+5. timeout is optional
 
 ```groovy
 stage("Quality Gate") {
